@@ -1,0 +1,7 @@
+html {
+  background-image: url(assets/rococobg.png);
+  background-size: 100%;
+}
+body {
+  overscroll-behavior: none;
+}
