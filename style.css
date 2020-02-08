@@ -20,8 +20,17 @@ body {
   max-width: 40%;
   margin: 2rem auto;
   border-radius: 2px;
-}
+  position: fixed;
+  top: 10%;
+  left: 30%;
 
+}
+.controls {
+  position: fixed;
+  left: 1%;
+  top: 10%;
+  width: 100px;
+}
 .photobooth:after {
   content: '';
   display: block;
