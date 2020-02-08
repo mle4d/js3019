@@ -23,13 +23,25 @@ body {
   position: fixed;
   top: 10%;
   left: 30%;
-
+}
+.controlsframe {
+  background-image: url(assets/controlframe.png);
+  background-repeat: no-repeat;
+  position: fixed;
+  left: 1%;
+  top: 8%;
+  width: 233px;
+  height: 300px;
 }
 .controls {
   position: fixed;
-  left: 1%;
-  top: 10%;
-  width: 100px;
+  left: 4%;
+  top: 15%;
+  width: 160px;
+  height: 220px;
+  text-align: center;
+  background-color: white;
+  z-index: -1;
 }
 .photobooth:after {
   content: '';
