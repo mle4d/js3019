@@ -5,3 +5,34 @@ html {
 body {
   overscroll-behavior: none;
 }
+.frame {
+  background-image: url(assets/bestframe.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 620px;
+  height: 540px;
+  z-index: +1;
+  position: fixed;
+  left: 24%;
+}
+.photobooth {
+  background: transparent;
+  max-width: 40%;
+  margin: 2rem auto;
+  border-radius: 2px;
+}
+
+.photobooth:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.photo {
+  width: 100%;
+  float: left;
+}
+
+.player {
+ display: none;
+}
