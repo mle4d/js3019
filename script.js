@@ -41,19 +41,19 @@ function takePhoto() {
 }
 
 function redEffect(pixels) {
-  for (let i = 0; i < pixels.data.length; i+=1) {
-    // pixels.data[i + 0] = pixels.data[i + 0] + 200; // RED
-    // pixels.data[i + 1] = pixels.data[i + 1] - 50; // GREEN
-    // pixels.data[i + 2] = pixels.data[i + 2] * 0.5; // Blue
+  for (let i = 0; i < pixels.data.length; i+=4) {
+    pixels.data[i + 0] = pixels.data[i + 0] + 200; // RED
+    pixels.data[i + 1] = pixels.data[i + 1] - 50; // GREEN
+    pixels.data[i + 2] = pixels.data[i + 2] * 0.5; // Blue
   }
   return pixels;
 }
 
 function rgbSplit(pixels) {
-  for (let i = 0; i < pixels.data.length; i+=2) {
-    pixels.data[i + 20] = pixels.data[i + 2]; // RED
-    // pixels.data[i - 300] = pixels.data[i + 1]; // GREEN
-    pixels.data[i + 20] = pixels.data[i + 8]; // Blue
+  for (let i = 0; i < pixels.data.length; i+=4) {
+    pixels.data[i + 0] = pixels.data[i + 2]^255; // RED
+    pixels.data[i + 3] = pixels.data[i + 1]^255; // GREEN
+    pixels.data[i + 2] = pixels.data[i + 8] ^255; // Blue
   }
   return pixels;
 }
