@@ -4,26 +4,44 @@
 }
 body {
   overscroll-behavior: none;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-top: 120px;
 }
-
 .frame {
   background-image: url(assets/bestframe.png);
   background-size: 100%;
   background-repeat: no-repeat;
   width: 620px;
   height: 540px;
-  z-index: +1;
+  z-index: 2;
   position: fixed;
   left: 24%;
+  top: 1%;
+}
+.marie {
+  background-image: url(assets/marie2.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 480px;
+  height: 620px;
+  z-index: 1;
+  position: fixed;
+  left: 32%;
+  top: 18%;
+}
+.photo {
+  width: 10px;
 }
 .photobooth {
   background: transparent;
-  max-width: 40%;
-  margin: 2rem auto;
-  border-radius: 2px;
+  width: 10%;
+  border-radius: 80px;
   position: fixed;
-  top: 10%;
-  left: 30%;
+  top: 25%;
+  left: 40%;
+  z-index: -1;
+  /* opacity: .7; */
 }
 .controlsframe {
   background-image: url(assets/controlframe.png);
@@ -42,7 +60,7 @@ body {
   height: 220px;
   text-align: center;
   background-color: white;
-  z-index: -1;
+  z-index: 1;
 }
 .photobooth:after {
   content: '';
