@@ -21,7 +21,7 @@ body {
 }
 .marie {
   background-image: url(assets/marie2.png);
-  background-size: 100%;
+  background-size: 110%;
   background-repeat: no-repeat;
   width: 480px;
   height: 620px;
@@ -31,11 +31,13 @@ body {
   top: 18%;
 }
 .photo {
-  width: 10px;
+ width: 100%;
+ height: 100%;
+ float: left;
 }
 .photobooth {
   background: transparent;
-  width: 10%;
+  width: 400px;
   border-radius: 80px;
   position: fixed;
   top: 25%;
@@ -44,33 +46,35 @@ body {
   /* opacity: .7; */
 }
 .controlsframe {
-  background-image: url(assets/controlframe.png);
+  background-image: url(assets/smallframe.png);
   background-repeat: no-repeat;
+  background-size: 100%;
   position: fixed;
-  left: 1%;
-  top: 8%;
-  width: 233px;
-  height: 300px;
+  left: 3%;
+  top: 12.5%;
+  width: 100px;
+  height: 80px;
+}
+button {
+  background-color: #f177b4;
+  width: 75px;
+  height: 52px;
+  cursor: grab;
 }
 .controls {
   position: fixed;
   left: 4%;
   top: 15%;
-  width: 160px;
-  height: 220px;
+  width: 60px;
+  height: 30px;
   text-align: center;
-  background-color: white;
   z-index: 1;
 }
+
 .photobooth:after {
   content: '';
   display: block;
   clear: both;
-}
-
-.photo {
-  width: 100%;
-  float: left;
 }
 
 .player {
@@ -78,140 +82,3 @@ body {
 }
  
 
-.grayscale{
-
-    -webkit-filter:grayscale(1);
-
-    -moz-filter:grayscale(1);
-
-    -o-filter:grayscale(1);
-
-    -ms-filter:grayscale(1);
-
-    filter:grayscale(1);
-
-}
-
-.sepia{
-
-    -webkit-filter:sepia(0.8);
-
-    -moz-filter:sepia(0.8);
-
-    -o-filter:sepia(0.8);
-
-    -ms-filter:sepia(0.8);
-
-    filter:sepia(0.8);
-
-}
-
-.blur{
-
-    -webkit-filter:blur(3px);
-
-    -moz-filter:blur(3px); */
-
-    -o-filter:blur(3px);
-
-    -ms-filter:blur(3px);
-
-    filter:blur(3px);
-
-}
-
-.brightness{
-
-    -webkit-filter:brightness(0.3);
-
-    -moz-filter:brightness(0.3);
-
-    -o-filter:brightness(0.3);
-
-    -ms-filter:brightness(0.3);
-
-    filter:brightness(0.3);
-
-}
-
-.contrast{
-
-    -webkit-filter:contrast(0.5);
-
-    -moz-filter:contrast(0.5);
-
-    -o-filter:contrast(0.5);
-
-    -ms-filter:contrast(0.5);
-
-    filter:contrast(0.5);
-
-}
-
-.hue-rotate{
-
-    -webkit-filter:hue-rotate(90deg);
-
-    -moz-filter:hue-rotate(90deg);
-
-    -o-filter:hue-rotate(90deg);
-
-    -ms-filter:hue-rotate(90deg);
-
-    filter:hue-rotate(90deg);
-
-}
-
-.hue-rotate2{
-
-    -webkit-filter:hue-rotate(180deg);
-
-    -moz-filter:hue-rotate(180deg);
-
-    -o-filter:hue-rotate(180deg);
-
-    -ms-filter:hue-rotate(180deg);
-
-    filter:hue-rotate(180deg);
-
-}
-.hue-rotate3{
-
-    -webkit-filter:hue-rotate(270deg);
-
-    -moz-filter:hue-rotate(270deg);
-
-    -o-filter:hue-rotate(270deg);
-
-    -ms-filter:hue-rotate(270deg);
-
-    filter:hue-rotate(270deg);
-
-}
-.saturate{
-
-    -webkit-filter:saturate(10);
-
-    -moz-filter:saturate(10);
-
-    -o-filter:saturate(10);
-
-    -ms-filter:saturate(10);
-
-    filter:saturate(10);
-
-}
-
-.invert{
-
-    -webkit-filter:invert(1);
-
-    -moz-filter:invert(1);
-
-    -o-filter: invert(1);
-
-    -ms-filter: invert(1);
-
-    filter: invert(1);
-
-} 
