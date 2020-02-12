@@ -5,47 +5,55 @@
 }
 body {
   overscroll-behavior: none;
-  margin-left: 400px;
+  /* margin-left: 400px;
   margin-right: 400px;
-  margin-top: 120px;
+  margin-top: 120px; */
+}
+h1 {
+  position: fixed;
+  right: 5%;
+  top: -1%;
+  font-family: 'Calligraffitti', cursive;
+  font-size: 3em;
 }
 .frame {
   background-image: url(assets/bestframe.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  width: 620px;
-  height: 540px;
+  width: 700px;
+  height: 600px;
   z-index: 2;
   position: fixed;
-  left: 24%;
+  left: 3%;
   top: 1%;
 }
 .marie {
   background-image: url(assets/marie2.png);
   background-size: 110%;
   background-repeat: no-repeat;
-  width: 480px;
-  height: 620px;
-  z-index: 1;
+  width: 43%;
+  height: 59%;
+  z-index: -1;
   position: fixed;
-  left: 32%;
-  top: 18%;
+  left: 12%;
+  top: 21%;
 }
 .photo {
- width: 100%;
- height: 100%;
- float: left;
+ width: auto;
+ height: 35%;
+ position: fixed;
+ top: 15%;
+ left: 24%;
 }
-.photobooth {
+/* .photobooth {
   background: transparent;
   width: 400px;
   border-radius: 80px;
   position: fixed;
   top: 25%;
-  left: 40%;
+  left: 1%;
   z-index: -1;
-  /* opacity: .7; */
-}
+} */
 .controlsframe {
   background-image: url(assets/smallframe.png);
   background-repeat: no-repeat;
