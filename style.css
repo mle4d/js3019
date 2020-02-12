@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Calligraffitti&display=swap');
  html {
   background-image: url(assets/rococobg.png);
   background-size: 100%;
@@ -50,21 +51,24 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   position: fixed;
-  left: 3%;
-  top: 12.5%;
-  width: 100px;
-  height: 80px;
+  right: 5%;
+  top: 8%;
+  width: 130px;
+  height: 100px;
 }
 button {
   background-color: #f177b4;
-  width: 75px;
-  height: 52px;
+  width: 100px;
+  height: 68px;
   cursor: grab;
+  font-family: 'Calligraffitti', cursive;
+  color: #ffffff;
+  font-size: 1.5em;
 }
 .controls {
   position: fixed;
-  left: 4%;
-  top: 15%;
+  right: 9.7%;
+  top: 11%;
   width: 60px;
   height: 30px;
   text-align: center;
