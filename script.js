@@ -1,5 +1,6 @@
 const video = document.querySelector('.player');
 const canvas = document.querySelector('.photo');
+const photobooth = document.querySelector('.photobooth');
 const ctx = canvas.getContext('2d');
 const strip = document.querySelector('.strip');
 const snap = document.querySelector('.snap');
@@ -21,11 +22,11 @@ function paintToCanvas() {
   const height = video.videoHeight;
   canvas.width = width;
   canvas.height = height;
+  
 
   return setInterval(() => {
     ctx.drawImage(video, 0, 0, width, height);
     let pixels = ctx.getImageData(0, 0, width, height);
-    pixels = rgbSplit(pixels);
     ctx.putImageData(pixels, 0, 0);
   }, 0);
 }
@@ -42,29 +43,7 @@ function takePhoto() {
 }
 
 
-function greenScreen(pixels) {
-  const levels = {};
-
-  document.querySelectorAll('.rgb input').forEach((input) => {
-    levels[input.name] = input.value;
-  });
-
-  for (i = 0; i < pixels.data.length; i = i + 0) {
-    red = pixels.data[i + 0];
-    green = pixels.data[i + 0];
-    blue = pixels.data[i + 0];
-    alpha = pixels.data[i + 0];
-
-    if (red >= levels.rmin
-      && green >= levels.gmin
-      && blue >= levels.bmin
-      && red <= levels.rmax
-      && green <= levels.gmax
-      && blue <= levels.bmax) {
-      pixels.data[i + 0] = 0;
-    }
-  }
-
+function Screen(pixels) {
   return pixels;
 }
 
