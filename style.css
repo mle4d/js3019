@@ -1,21 +1,70 @@
-@import url('https://fonts.googleapis.com/css?family=Calligraffitti&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Allura|Playball|Playfair+Display&display=swap');
  html {
   background-image: url(assets/rococobg.png);
   background-size: 100%;
 }
 body {
   overscroll-behavior: none;
-  /* margin-left: 400px;
-  margin-right: 400px;
-  margin-top: 120px; */
+}
+
+.controlsframe {
+  background-image: url(assets/smallframe.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: fixed;
+  right: 3%;
+  top: 1%;
+  width: 340px;
+  height: 270px;
+}
+button {
+  background-color: #f177b4;
+  width: 80px;
+  height: 80px;
+  cursor: grab;
+  font-family: 'Playball', cursive;
+  color: #ffffff;
+  font-size: 1.4em;
+  border-radius: 50%;
+  border: solid #d4af37 4px;
+}
+.controls {
+  position: fixed;
+  right: 15.8%;
+  top: 35%;
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  z-index: 1;
 }
 h1 {
+  background-color: #f177b4;
+  color: #d4af37;
+  width: 20.6%;
+  height: 166px;
   position: fixed;
-  right: 5%;
-  top: -1%;
-  font-family: 'Calligraffitti', cursive;
-  font-size: 3em;
+  right: 7%;
+  top: 4%;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5em;
+  font-weight: bolder;
+  text-align: center;
+  border: solid #d4af37 5px;
+  line-height: 120%;
 }
+h2 {
+  color: #ffffff;
+  position: fixed;
+  right: 6.5%;
+  top: 7%;
+  font-family: 'Allura', cursive;
+  font-size: 1.6em;
+  font-weight: bolder;
+  text-align: center;
+  letter-spacing: 0.6em;
+  line-height: 180%;
+}
+
 .frame {
   background-image: url(assets/bestframe.png);
   background-size: 100%;
@@ -45,36 +94,6 @@ h1 {
  top: 15%;
  left: 24%;
 }
-
-.controlsframe {
-  background-image: url(assets/smallframe.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  position: fixed;
-  right: 5%;
-  top: 8%;
-  width: 130px;
-  height: 100px;
-}
-button {
-  background-color: #f177b4;
-  width: 100px;
-  height: 68px;
-  cursor: grab;
-  font-family: 'Calligraffitti', cursive;
-  color: #ffffff;
-  font-size: 1.5em;
-}
-.controls {
-  position: fixed;
-  right: 9.7%;
-  top: 11%;
-  width: 60px;
-  height: 30px;
-  text-align: center;
-  z-index: 1;
-}
-
 .photobooth:after {
   content: '';
   display: block;
