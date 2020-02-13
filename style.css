@@ -31,6 +31,7 @@ button {
   position: fixed;
   right: 22.6%;
   top: 66.8%;
+  outline: none;
 }
 .controls {
   background-image: url(assets/buttonframe.png);
@@ -94,10 +95,10 @@ h2 {
 }
 .photo {
  width: auto;
- height: 35%;
+ height: 20%;
  position: fixed;
- top: 17%;
- left: 20%;
+ top: 30%;
+ left: 25%;
  border-radius: 50%;
 }
 .photobooth:after {
@@ -109,5 +110,56 @@ h2 {
 .player {
  display: none;
 }
- 
+.strip {
+  position: fixed;
+  right: .8%;
+  top: -2.5%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  z-index: -1;
+}
+
+.strip img {
+  height: 29px;
+  padding: 4rem;
+  overflow-y: scroll;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+.strip1 {
+  background-image: url(assets/strip1frame.png);
+  background-size: 100%;
+  width: 170px;
+  height: 137px;
+  position: fixed;
+  right: 1%;
+  top: 1%;
+}
+.strip2 {
+  background-image: url(assets/stripframe2.png);
+  background-size: 100%;
+  width: 170px;
+  height: 129px;
+  position: fixed;
+  right: 1%;
+  top: 27.8%;
+}
+.strip3 {
+  background-image: url(assets/strip3frame.png);
+  background-size: 100%;
+  width: 170px;
+  height: 129px;
+  position: fixed;
+  right: 1%;
+  top: 52.4%;
+}
+.strip4 {
+  background-image: url(assets/strip4frame.png);
+  background-size: 100%;
+  width: 170px;
+  height: 135px;
+  position: fixed;
+  right: 1%;
+  top: 78.8%;
+}
 
