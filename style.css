@@ -7,61 +7,66 @@ body {
   overscroll-behavior: none;
 }
 
-.controlsframe {
-  background-image: url(assets/smallframe.png);
+.headerframe {
+  background-image: url(assets/headframe.png);
+  background-color: #dd4598;
   background-repeat: no-repeat;
   background-size: 100%;
   position: fixed;
-  right: 3%;
+  right: 15%;
   top: 1%;
-  width: 340px;
-  height: 270px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
 }
 button {
-  background-color: #f177b4;
-  width: 80px;
-  height: 80px;
+  background-color: #dd4598;
+  width: 100px;
+  height: 124px;
   cursor: grab;
   font-family: 'Playball', cursive;
-  color: #ffffff;
+  color: #d4af37;
   font-size: 1.4em;
   border-radius: 50%;
-  border: solid #d4af37 4px;
+  position: fixed;
+  right: 22.6%;
+  top: 66.8%;
 }
 .controls {
+  background-image: url(assets/buttonframe.png);
+  background-size: 100%;
   position: fixed;
-  right: 15.8%;
-  top: 35%;
-  width: 60px;
-  height: 30px;
+  right: 19.5%;
+  top: 50%;
+  width: 180px;
+  height: 289px;
   text-align: center;
   z-index: 1;
 }
 h1 {
-  background-color: #f177b4;
   color: #d4af37;
-  width: 20.6%;
-  height: 166px;
+  width: 15%;
+  height: 30%;
   position: fixed;
-  right: 7%;
-  top: 4%;
+  right: 19%;
+  top: 7%;
   font-family: 'Playfair Display', serif;
   font-size: 2.5em;
   font-weight: bolder;
   text-align: center;
-  border: solid #d4af37 5px;
+  border-radius: 50%;
   line-height: 120%;
 }
 h2 {
   color: #ffffff;
   position: fixed;
-  right: 6.5%;
-  top: 7%;
+  right: 17.5%;
+  top: 9%;
   font-family: 'Allura', cursive;
   font-size: 1.6em;
   font-weight: bolder;
   text-align: center;
-  letter-spacing: 0.6em;
+  letter-spacing: 0.5em;
   line-height: 180%;
 }
 
